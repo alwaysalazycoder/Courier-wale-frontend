@@ -1,5 +1,5 @@
 /* 🧡 universal code */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -7,8 +7,12 @@
     list-style: none;
 }
 
-/* 🔥 navbar right side */
-.navbar-container .navbar{
+:root {
+    --primary-color: #ffffff;
+}
+
+/* 🔥 navbar left side */
+.navbar-container .navbar {
     display: flex;
     width: 100vw;
     height: 10vh;
@@ -16,67 +20,77 @@
     align-items: center;
     justify-content: space-between;
 }
-.navbar-logo-container{
+
+.navbar-logo-container {
     display: flex;
     width: 30vw;
     background-color: rebeccapurple;
     align-items: center;
     justify-content: space-between;
+    margin: 0 3px;
 }
-.navbar-logo,.login-avatar-logo{
+.navbar-logo,
+.login-avatar-logo {
     display: flex;
     align-items: center;
 }
-.navbar-logo-container .navbar-logo img,.login-avatar .login-avatar-logo img{
+
+.navbar-logo-container .navbar-logo img,
+.login-avatar .login-avatar-logo img {
     object-fit: contain;
     height: 9.5vh;
     border-radius: 50px;
 }
-.navbar-logo-container .logo-name{
+
+.navbar-logo-container .logo-name {
     font-size: 35px;
 
 }
-.menu-btn .menu-btn-label{
+
+.menu-btn .menu-btn-label {
     font-size: 32px;
     margin-right: 10px;
     color: white;
     display: none;
 }
-#responsive{
-    display: none;
-}
 
 
-/* 🔥 navbar left side */
-.navbar-links-container{
+
+
+/* 🔥 navbar right side */
+.navbar-links-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 500px;
     background-color: antiquewhite;
+    margin: 0 3px;
 }
-.navbar-links-container ul{
+
+.navbar-links-container ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.navbar-links-container ul li{
+
+.navbar-links-container ul li {
     font-size: 19px;
 }
-.navbar-links-container ul li:not(:last-child){
+
+.navbar-links-container ul li:not(:last-child) {
     margin-right: 30px;
 }
-.login-avatar .login-avatar-logo img{
+
+.login-avatar .login-avatar-logo img {
     height: 7vh;
 }
-.navbar-links-container-resp{
+.navbar-links-container-resp {
     display: none;
 }
 
+
 /* extra classes for handling responsiveness */
-#responsive-nav-class{
-    visibility: hidden;
-}
+
 
 
 
@@ -88,29 +102,43 @@
 @media (max-width : 1070px) {
 
     /*🔥 navigation bar  */
-    .navbar-logo-container{
+    .navbar-logo-container {
         width: 100vw;
+        background-color: rebeccapurple;
+        height: 10vh;
     }
-    .menu-btn .menu-btn-label{
+
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-btn .menu-btn-label {
         display: block;
     }
-    .navbar-container .navbar{
+
+    .navbar-container .navbar {
         display: block;
     }
-    .navbar-links-container{
+
+    .navbar-links-container {
         display: none;
     }
-  /* toggling class through js */
-    .navbar-links-container-resp{
+
+    /* toggling class through js */
+    .navbar-links-container-resp {
         position: fixed;
         display: block;
         width: 100%;
         height: 90vh;
-        background-color: red;
+        background-color: palegoldenrod;
         display: flex;
         justify-content: center;
+        transition: all 0.65s;
+        left: -100%;
     }
-    .navbar-links-container-resp ul{
+
+    .navbar-links-container-resp ul {
         display: flex;
         width: 60%;
         flex-direction: column;
@@ -120,7 +148,14 @@
         font-size: 25px;
         padding: 30px 0;
     }
-    .navbar-links-container-resp ul li:not(:last-child){
+
+    .navbar-links-container-resp ul li:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    #responsive:checked~.navbar-links-container-resp::before {
+        background-color: palevioletred;
+        left: 0;
+    }
+
 }

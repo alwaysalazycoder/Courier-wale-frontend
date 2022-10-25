@@ -1,12 +1,18 @@
-let resp = document.getElementById("responsive-menu-bar");
-let responsiveClass = document.getElementById("responsive-nav-class");
+// 🔥 navigation bar responsiveness ....
 
+let menubtn = document.getElementById("responsive-menu-bar");
+let responsivediv = document.getElementById("responsive-nav-class")
+let count = 0;
+menubtn.addEventListener('click' , ()=>{
+    count++;
+    if(count%2 == 0){
+        responsivediv.style.left = "-100%";
 
-resp.addEventListener('click', () => {
-    if (responsiveClass.style.visibility === "inherit") {
-        responsiveClass.style.visibility = "hidden";
-    } else {
-        responsiveClass.style.visibility = "inherit";
+    }
+    else{
+        responsivediv.style.left = "0%";
+
     }
 })
-// new comment for random push
+
+
