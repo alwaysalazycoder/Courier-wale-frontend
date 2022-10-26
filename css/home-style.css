@@ -5,8 +5,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
-
+a{
+    color: black;
+}
 :root {
     --primary-color: #ffffff;
 }
@@ -27,7 +30,6 @@
     background-color: rebeccapurple;
     align-items: center;
     justify-content: space-between;
-    margin: 0 3px;
 }
 .navbar-logo,
 .login-avatar-logo {
@@ -87,6 +89,44 @@
 .navbar-links-container-resp {
     display: none;
 }
+
+/* main body */
+
+/* 🔥 main body container */
+.body-container{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    /* background-color: greenyellow; */
+}
+.body-intro-details{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+    justify-content:center;
+    /* background-color: palevioletred; */
+
+}
+.body-intro-details .heading{
+    font-size: 42px;
+    font-weight: bold;
+    color: green;
+}
+.body-intro-details p{
+    font-size: 20px;
+}
+.intro-photo{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 
 /* extra classes for handling responsiveness */
