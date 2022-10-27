@@ -24,7 +24,7 @@ img{
     object-fit: contain;
 }
 body{
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 .track-page-main-container {
     display: flex;
@@ -38,6 +38,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #19a67c;
+    background-color: pink;
+
     width: 100vw;
     min-height: 72vh;
     border-radius:  0  0 25px 25px;
@@ -49,6 +51,9 @@ body{
     padding: 0 7px;
     height: 10vh;
     width: 100%;
+    background-color: rgb(253, 154, 170);
+    /* background-color: #18936ad1; */
+    border-radius: 0 0 15px 15px;
 }
 .track-page-details .heading{
     font-size: 14px;
@@ -74,7 +79,7 @@ body{
 }
 .track-input-container{
     display: flex;
-    height: 8vh;
+    min-height: 70px;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -111,8 +116,199 @@ i{
 
 }
 .track-graphic-logo img{
-    height: 40vh;
+    height: 33vh;
+    /* background-color: pink; */
 }
+.details_data_container{
+    margin-top: 10px;
+    /* background-color: palevioletred; */
+    height: 300vh;
+}
+.package-status{
+    font-size: 28px;
+    font-weight: 550;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.progress-bar{
+    height: 100px;
+    width: 7px;
+    top: 20px;
+    left: 10%;
+    
+}
+.first{
+    height: 200px;
+}
+.done{
+    background-color: palevioletred
+}
+.remaining{
+    background-color: #dad7d7;
+}
+.progress-status-wrapper{
+    display: flex;
+}
+.progress-status-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black ; */
+    height: 800px;
+}
+.progress-status-details-container{
+    width: calc(100% - 100px);
+    /* background-color: aqua; */
+    height: 840px;
+}
+.dot{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: #f1f1f18b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot i {
+    font-size: 24px;
+    margin-left: 12px;
+}
+.progress-status-details-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.progress-status-details{
+    display: flex;
+    /* background-color: greenyellow; */
+    margin-bottom: 20px;
+    height: 150px;
+}
+.first-status-details{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.delivery-person-details{
+    display: flex;
+    background-color: #f1f1f1;
+    height: 110px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 300px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.delivery-guy-photo img{
+    object-fit: contain;
+    height: 50px;
+    border-radius: 50px;
+}
+.delivery-guy-name-details{
+    display : flex;
+    flex-direction: column;
+    height: 100px;
+    /* background-color: pink; */
+    text-align: center;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+}
+.delivery-guy-call{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    align-items:center;
+    justify-content: center;
+    font-size: 22px;
+}
+._1{
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+._2{
+    margin-right: 24px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    margin-left: 10px;
+}
+.delivery-guy-call i{
+    margin-left: 10px;
+}
+.progress-status-heading{
+    font-size: 20px;
+    font-weight: 550;
+}
+.first-status-heading{
+    margin-top: 10px;
+}
+.second-status-heading{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.third-status-heading{
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.fourth-status-heading{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-left: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-height:650px) {
     .tracking-details h2{
@@ -125,9 +321,6 @@ i{
     input{
         height: 20px;
         padding: 0;
-    }
-    .track-btn button{
-        height: 20px;
     }
     .track-input-container{
         margin-top: 10px;
