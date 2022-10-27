@@ -9,6 +9,10 @@ background-color: #f1f1f1;
 background-color: #2196F3BF;
 
 #127050 darker variant  */
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -47,11 +51,12 @@ body{
     width: 100%;
 }
 .track-page-details .heading{
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
 }
 .track-page-avatar img{
     object-fit: contain;
-    height: 7vh;
+    height: 5vh;
     border-radius: 50px;
 }
 .tracking-details{
@@ -69,7 +74,7 @@ body{
 }
 .track-input-container{
     display: flex;
-    height: 6vh;
+    height: 8vh;
     background-color: white;
     align-items: center;
     justify-content: center;
