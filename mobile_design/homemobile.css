@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;padding: 0;
+}.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(253, 154, 170);
+    background-color: #18936ad1;
+    border-radius: 0 0 15px 15px;
+}
+.home-page-avatar img{
+    object-fit:  contain;
+    height: 5vh;
+    border-radius: 50px;
+}
+body{
+    background-color: #19a67c;
+
+}
