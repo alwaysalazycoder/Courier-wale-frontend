@@ -38,13 +38,13 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #19a67c;
-    background-color: pink;
+    /* background-color: pink; */
 
     width: 100vw;
     min-height: 72vh;
     border-radius:  0  0 25px 25px;
 }
-.track-page-navbar{
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ body{
     height: 10vh;
     width: 100%;
     background-color: rgb(253, 154, 170);
-    /* background-color: #18936ad1; */
+    background-color: #18936ad1;
     border-radius: 0 0 15px 15px;
 }
 .track-page-details .heading{
